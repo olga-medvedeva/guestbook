@@ -6,10 +6,12 @@ Service has following functions:
 
 - When user gets to [http://localhost:8080/guestbook](http://localhost:8080/guestbook) (img 1) it displays all of the information that was read from **signatures.txt** file. 
   When project starts, there are 4 lines in the **signatures.txt** file:
-> First signature
-> Second signature
-> Third signature
-> Forth signature
+```
+First signature
+Second signature
+Third signature
+Forth signature
+```
 
 If user wants to add his signature this can be done using the link * *Add your signature* *. This link gets user to a page [http://localhost:8080/guestbook/new](http://localhost:8080/guestbook/new) (img 2) which takes the input information, creates new signature throw http://localhost:8080/guestbook/create (which user doesn't see), appends it in **signatures.txt** and redirects back to [http://localhost:8080/guestbook](http://localhost:8080/guestbook) (img 3) where new information already displayed.
   
